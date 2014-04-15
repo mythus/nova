@@ -209,6 +209,8 @@ action :create do
       "libvirt_cpu_mode" => node["nova"]["libvirt"]["libvirt_cpu_mode"],
       "libvirt_cpu_model" => node["nova"]["libvirt"]["libvirt_cpu_model"],
       "force_raw_images" => node["nova"]["config"]["force_raw_images"],
+      "libvirt_images_type" => node["nova"]["config"]["libvirt_images_type"],
+      "preallocate_images" => node["nova"]["config"]["preallocate_images"],
       "allow_same_net_traffic" => node["nova"]["config"]["allow_same_net_traffic"],
       "quota_instances" => node["nova"]["config"]["quota_instances"],
       "quota_fixed_ips" => node["nova"]["config"]["quota_fixed_ips"],
